@@ -27,13 +27,43 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   /*background: #161415 url(../images/header-background.jpg) no-repeat top center;*/
+  background-color: rgb(18, 18, 46);
+  background-image: url('https://images.pexels.com/photos/2719301/pexels-photo-2719301.jpeg');
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
 }
 
+/*Animated text in header*/
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+body {
+  background: #111;
+}
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-family:Khula;
+  font-size:2em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
 /* vertically center banner section */
 
 .about-text span{
@@ -95,6 +125,17 @@ header .social li {
 header .social li a { color: #fff; }
 header .social li a:hover { color: #11ABB0; }
 
+header .btn{
+   width: 200px;
+   padding: 15px;
+   border: #cc0044 5px dotted;
+   color: #ff4482;
+}
+
+header .btn:hover{
+   color: violet; 
+   border-color: violet;
+}
 /* scrolldown link */
 header .scrolldown a {
    position: absolute;
@@ -532,9 +573,10 @@ ul#nav li.current a { color: #F06000; }
 }
 .popup-modal .description-box .categories {
    font: 11px/21px 'opensans-light', sans-serif;
-   color: #A1A1A1;
+   color: #c42222;
    text-transform: uppercase;
    letter-spacing: 2px;
+   font-weight: bold;
    display: block;
    text-align: left;
 }
@@ -975,3 +1017,9 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
+
+
+.stack-item{
+   height: 80px;
+   margin: 2px;
+}
